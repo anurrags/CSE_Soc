@@ -1,0 +1,27 @@
+.logo {
+  font-size: 3rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  width: fit-content;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+li {
+  margin: 1rem;
+}
+.logout_btn {
+  background-color: #fff;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+button:hover {
+  cursor: pointer;
+}

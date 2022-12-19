@@ -1,0 +1,46 @@
+.main_container {
+  background-color: #16213e;
+  color: #fff;
+}
+a,
+a:hover,
+:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  margin: 0 2rem 0 2rem;
+  padding: 2rem 1rem;
+}
+.card {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* align-items: center; */
+  background-color: #0f3460;
+  padding: 1rem;
+}
+.card img {
+  width: 10rem;
+  height: 10rem;
+}
+.card .content .event-name {
+  color: #a91079;
+  font-weight: 700;
+}
+.card .content .event-details {
+  color: #ffffff;
+}
+.card .content .event-link {
+  color: #f806cc;
+  text-decoration: underline;
+}
+.card .content .event-link:hover {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
