@@ -1,0 +1,61 @@
+.main_container-event {
+  background: #757f9a;
+  background: -webkit-linear-gradient(to right, #d7dde8, #757f9a);
+  background: linear-gradient(to right, #d7dde8, #757f9a);
+}
+a,
+a:hover,
+:active,
+a:visited {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+.container-event {
+  margin: 0 2rem 0 2rem;
+  padding: 2rem 1rem;
+}
+.events .card {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* align-items: center; */
+  background: #314755; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #26a0da,
+    #314755
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #26a0da,
+    #314755
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 1rem;
+}
+.events .card img {
+  width: 10rem;
+  height: 10rem;
+}
+.events .card .content .event-name {
+  color: #980c6c;
+  font-weight: 700;
+}
+.events .card .content .event-details {
+  color: #ffffff;
+}
+.events .card .content .event-link {
+  color: #3e1837;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.events .card .content .event-link:hover {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.event-link {
+  background-color: inherit;
+  border: none;
+}

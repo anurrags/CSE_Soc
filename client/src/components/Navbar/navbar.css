@@ -1,21 +1,54 @@
 .logo {
   font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.hover {
+  border: 2px solid;
+  padding: 0.5rem 1rem;
+  border-image: repeating-linear-gradient(
+      135deg,
+      #368bfb 0 10px,
+      #b551c9 0 20px,
+      #8928ff 0 30px
+    )
+    8;
+  -webkit-mask: conic-gradient(
+        from 180deg at top 8px right 8px,
+        #0000 90deg,
+        #000 0
+      )
+      var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0
+      var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: 0.1s, -webkit-mask-position 0.1s 0.1s;
+}
+.hover:hover {
+  --_i: 100%;
+  color: #07ff2c;
+  transition: 0.1s, -webkit-mask-size 0.1s 0.1s;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  padding: 0rem 2rem;
+  color: #fff;
 }
-.list {
+.nav-list {
   width: fit-content;
 }
-ul {
+.nav-list ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-li {
+/* .nav-list li {
   margin: 1rem;
-}
+} */
 .logout_btn {
   background-color: #fff;
   padding: 0.3rem 0.8rem;

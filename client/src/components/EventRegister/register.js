@@ -2,7 +2,7 @@ import "./register.css";
 const register = () => {
   return (
     <div>
-      <h1>Register</h1>
+      <h1 className="register-heading">Register</h1>
       <div className="form">
         <form
           action="https://formsubmit.co/iamanurag0501@gmail.com"

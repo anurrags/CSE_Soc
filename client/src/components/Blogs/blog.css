@@ -1,0 +1,13 @@
+.blog-div {
+  background: #757f9a;
+  background: -webkit-linear-gradient(to right, #d7dde8, #757f9a);
+  background: linear-gradient(to right, #d7dde8, #757f9a);
+  padding-bottom: 3rem;
+}
+.blog-component {
+  margin: 4rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 4rem;
+}

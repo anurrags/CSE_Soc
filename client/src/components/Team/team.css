@@ -1,0 +1,62 @@
+.all-members {
+  background: #757f9a;
+  background: -webkit-linear-gradient(to right, #d7dde8, #757f9a);
+  background: linear-gradient(to right, #d7dde8, #757f9a);
+
+  padding-bottom: 2rem;
+}
+h1 {
+  margin-bottom: 0;
+}
+.year-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 5rem;
+}
+.fourth-year-members,
+.third-year-members,
+.second-year-members {
+  border: 2px solid #000;
+  border-radius: 1rem;
+  margin: 3rem 4rem;
+  background: #2bc0e4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaecc6,
+    #2bc0e4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaecc6,
+    #2bc0e4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.year-title {
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+.team-title {
+  text-align: center;
+  font-size: 5rem;
+}
+.team-title span {
+  color: chartreuse;
+}

@@ -1,7 +1,9 @@
 .signup_container {
   width: 100%;
   min-height: 100vh;
-  background-color: #16213e;
+  background: #757f9a;
+  background: -webkit-linear-gradient(to right, #d7dde8, #757f9a);
+  background: linear-gradient(to right, #d7dde8, #757f9a);
   display: flex;
   align-items: center;
   justify-content: center;

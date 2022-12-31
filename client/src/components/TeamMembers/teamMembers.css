@@ -1,0 +1,121 @@
+/* #team_member {
+  background-color: rgb(178, 216, 249);
+  padding: 2rem;
+} */
+#team_member .members {
+  display: flex;
+  justify-content: space-between;
+}
+#team_member .member {
+  margin: 20px 15px;
+  border-radius: 15px;
+  width: 16rem;
+  padding: 40px 0;
+  height: max-content;
+  background-color: #fff;
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#team_member .member::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 20px;
+  transition: all 1s;
+  background: rgba(8, 61, 119);
+}
+
+#team_member .member::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 20px;
+  transition: all 1s;
+  background: rgba(8, 61, 119);
+}
+#team_member .lead-title {
+  color: #000;
+  text-align: center;
+}
+#team_member img {
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+#team_member .description h1 {
+  color: rgba(8, 61, 119);
+  text-align: center;
+}
+
+#team_member .description h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #f21b3f;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#team_member .description p {
+  color: rgba(8, 61, 119);
+  text-align: justify;
+  padding: 0 15px;
+}
+
+#team_member .social-media {
+  position: absolute;
+  background-color: rgba(8, 61, 119);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+  transition: all 1s;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 0 15px 15px;
+  color: #fff;
+}
+
+#team_member .description .social-media svg {
+  font-size: 30px;
+  transition: all 1s;
+}
+
+#team_member .member:hover .social-media {
+  width: 100%;
+  opacity: 1;
+}
+
+#team_member .member:hover {
+  background-color: rgba(8, 61, 119, 0.2);
+  transform: scale(1.01);
+}
+
+#team_member .member:hover img {
+  transform: scale(1.1);
+  border: 2px solid rgba(8, 61, 119);
+}
+
+#team_member .description .social-media svg:hover {
+  transform: scale(1.1);
+  color: #f21b3f;
+}
+
+#team_member .member:hover::before {
+  width: 50%;
+}
+
+#team_member .member:hover::after {
+  width: 50%;
+}
