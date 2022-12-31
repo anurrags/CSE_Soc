@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
 
+mongoose.set("strictQuery", false);
 export default () => {
-  const connectionParams = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  };
+  // const connectionParams = {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  // };
   try {
-    mongoose.connect(process.env.DB, connectionParams);
+    mongoose.connect(process.env.DB);
     console.log("Connected to database successfully");
   } catch (error) {
     console.log(error);

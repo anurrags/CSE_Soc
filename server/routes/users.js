@@ -2,6 +2,7 @@ import express from "express";
 import { User, validate } from "../models/user.js";
 import bcrypt from "bcrypt";
 const router = express.Router();
+
 export default router.post("/", async (req, res) => {
   try {
     const { error } = validate(req.body);
