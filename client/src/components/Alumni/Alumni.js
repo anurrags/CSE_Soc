@@ -1,5 +1,5 @@
 import "./alumni.css";
-import TeamMembers from "../TeamMembers/teamMembers";
+import AlumniMembers from "../AlumniMembers/AlumniMembers";
 import Navbar from "../Navbar/navbar";
 import useFetch from "../../hooks/useFetch";
 const Alumni = () => {
@@ -8,14 +8,14 @@ const Alumni = () => {
   return (
     <div className="all-members">
       <Navbar />
-      <h1 className="team-title">
+      <h1 className="alumni-title">
         <span>Our</span> Alumni
       </h1>
-      <div className="year-members">
+      <div className="alumni-members">
         {loading
           ? "Loading Please wait"
           : data.map((item) => (
-              <TeamMembers
+              <AlumniMembers
                 image={item.image}
                 name={item.name}
                 designation={item.designation}

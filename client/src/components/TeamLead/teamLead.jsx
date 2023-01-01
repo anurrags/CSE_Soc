@@ -9,7 +9,7 @@ function TeamLead() {
       <h1 className="lead-title">Team Leads</h1>
       <div className="divider"></div>
       <div className="members">
-        <div className="member">
+        <div className="member member-first">
           <img
             width={200}
             height={200}
@@ -32,7 +32,7 @@ function TeamLead() {
             </div>
           </div>
         </div>
-        <div className="member">
+        <div className="member member-second">
           <img
             width={200}
             height={200}
@@ -55,7 +55,7 @@ function TeamLead() {
             </div>
           </div>
         </div>
-        <div className="member">
+        <div className="member member-third">
           <img
             width={200}
             height={200}

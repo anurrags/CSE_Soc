@@ -1,0 +1,44 @@
+.all-members {
+  min-height: 100vh;
+}
+.alumni-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  width: 100%;
+  row-gap: 2rem;
+}
+.alumni-title {
+  text-align: center;
+  font-size: 5rem;
+}
+.alumni-title span {
+  color: chartreuse;
+}
+@media (max-width: 1030px) {
+  .alumni-members {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 930px) {
+  .alumni-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .alumni-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .alumni-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .alumni-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 530px) {
+  .alumni-members {
+    grid-template-columns: 1fr;
+  }
+}

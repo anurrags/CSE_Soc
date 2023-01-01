@@ -12,9 +12,16 @@ a:visited {
 a {
   color: inherit;
 }
+.main_container-event .team-title {
+  text-align: center;
+  font-size: 4rem;
+}
+.main_container-event .team-title span {
+  color: chartreuse;
+}
 .container-event {
   margin: 0 2rem 0 2rem;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
 }
 .events .card {
   margin: 2rem 0;
@@ -37,7 +44,11 @@ a {
 }
 .events .card img {
   width: 10rem;
-  height: 10rem;
+  height: 100%;
+  max-height: 12rem;
+}
+.events .card .content {
+  padding: 0 1rem;
 }
 .events .card .content .event-name {
   color: #980c6c;
@@ -58,4 +69,40 @@ a {
 .event-link {
   background-color: inherit;
   border: none;
+}
+@media (max-width: 850px) {
+  .main_container-event .team-title {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .main_container-event .team-title {
+    font-size: 2.4rem;
+  }
+  .events .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .events .card .content .event-name {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .events .card {
+    grid-template-rows: 1fr 1.5fr;
+    row-gap: 1rem;
+  }
+  .main_container-event .team-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .events .card {
+    grid-template-rows: 1fr 2fr;
+    row-gap: 1rem;
+  }
 }

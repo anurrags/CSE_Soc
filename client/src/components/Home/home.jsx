@@ -79,8 +79,8 @@ const Home = () => {
                 </a>
               </li>
             </ul>
-            <span>© CSE-Society 2023</span>
           </div>
+          <span>© CSE-Society 2023</span>
         </div>
       </div>
     </div>

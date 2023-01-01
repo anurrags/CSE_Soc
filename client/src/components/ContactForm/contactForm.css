@@ -31,3 +31,8 @@
   cursor: pointer;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .contact-form label {
+    font-size: 1rem;
+  }
+}

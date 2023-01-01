@@ -11,7 +11,9 @@ h1 {
 .year-members {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 2rem 5rem;
+  padding: 2rem 4rem;
+  row-gap: 2rem;
+  justify-items: center;
 }
 .fourth-year-members,
 .third-year-members,
@@ -34,17 +36,9 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .year-title {
-  background: #16222a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3a6073,
-    #16222a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #3a6073,
-    #16222a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222a;
+  background: -webkit-linear-gradient(to right, #3a6073, #16222a);
+  background: linear-gradient(to right, #3a6073, #16222a);
 
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
@@ -57,6 +51,38 @@ h1 {
   text-align: center;
   font-size: 5rem;
 }
-.team-title span {
+.all-members .team-title span {
   color: chartreuse;
+}
+
+@media (max-width: 1230px) {
+  .year-members {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 1150px) {
+  .year-members {
+    /* padding: 2rem 1rem; */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1150px) {
+  .year-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .fourth-year-members {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 490px) {
+  .year-members {
+    grid-template-columns: 1fr;
+  }
+  .team-title {
+    font-size: 3rem;
+  }
 }

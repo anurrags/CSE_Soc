@@ -31,7 +31,7 @@ const Home = () => {
                     src={
                       data.image
                         ? data.image
-                        : "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
+                        : "http://www.tamarindglobal.com/images/events/events.jpg"
                     }
                     alt="Event"
                   />

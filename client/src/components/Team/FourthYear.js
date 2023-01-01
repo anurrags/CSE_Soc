@@ -17,6 +17,7 @@ const SecondYear = () => {
               instagram={item.instagram}
               twitter={item.twitter}
               key={item.rollNo}
+              className="year-member"
             />
           ))}
     </div>

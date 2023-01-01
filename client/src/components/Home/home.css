@@ -1,6 +1,9 @@
 .container-home {
   background-color: #4b9adb;
 }
+.home-about-us {
+  padding: 2rem;
+}
 .about-us {
   display: flex;
 }
@@ -61,4 +64,51 @@
   background-color: #4c6e8a;
   color: #fff;
   padding: 2rem 2rem 0 2rem;
+}
+.home-footer span {
+  display: block;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .first-about-us,
+  .second-about-us {
+    padding: 2rem 0;
+  }
+  .home-about-us {
+    padding: 1.5rem;
+  }
+  .home-about-title {
+    font-size: 3rem;
+    align-self: center;
+  }
+  .home-social-media svg {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-us {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .second-about-us {
+    flex-direction: column-reverse;
+  }
+  .second-para,
+  .first-para {
+    text-align: left;
+    padding: 0;
+    padding-left: 1rem;
+  }
+  .home-about-title {
+    font-size: 2rem;
+  }
+  .contact-form-heading {
+    font-size: 1.5rem;
+  }
+  .home-social-media svg {
+    font-size: 1.8rem;
+  }
+  .home-footer span {
+    font-size: 0.7rem;
+  }
 }

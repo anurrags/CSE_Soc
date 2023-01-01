@@ -7,10 +7,10 @@
   justify-content: space-between;
 }
 #team_member .member {
-  margin: 20px 15px;
   border-radius: 15px;
-  width: 16rem;
-  padding: 40px 0;
+  max-width: 16rem;
+  width: 100%;
+  padding: 2.3rem 2.3rem;
   height: max-content;
   background-color: #fff;
   transition: all 1s;
@@ -28,7 +28,7 @@
   left: 0;
   content: "";
   width: 0;
-  height: 20px;
+  height: 1rem;
   transition: all 1s;
   background: rgba(8, 61, 119);
 }
@@ -39,7 +39,7 @@
   right: 0;
   content: "";
   width: 0;
-  height: 20px;
+  height: 1rem;
   transition: all 1s;
   background: rgba(8, 61, 119);
 }
@@ -48,6 +48,8 @@
   text-align: center;
 }
 #team_member img {
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   transition: all 1s;
 }
@@ -78,7 +80,7 @@
   left: 0;
   width: 100%;
   display: flex;
-  padding: 10px 0;
+  padding: 0.5rem;
   justify-content: space-around;
   transition: all 1s;
   width: 0;
@@ -88,7 +90,7 @@
 }
 
 #team_member .description .social-media svg {
-  font-size: 30px;
+  font-size: 1.5rem;
   transition: all 1s;
 }
 
@@ -118,4 +120,135 @@
 
 #team_member .member:hover::after {
   width: 50%;
+}
+
+@media (max-width: 850px) {
+  #team_member .member {
+    max-width: 15rem;
+    width: 100%;
+    margin: 0;
+  }
+  #team_member .description h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  #team_member .description h1 {
+    font-size: 2rem;
+  }
+  #team_member img {
+    width: 9rem;
+    height: 9rem;
+  }
+  #team_member .social-media {
+    padding: 8px 0;
+  }
+  #team_member .member::after {
+    height: 1rem;
+  }
+
+  #team_member .member::before {
+    height: 1rem;
+  }
+  #team_member .description .social-media svg {
+    font-size: 1.4rem;
+  }
+  .lead-title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  #team_member .member {
+    max-width: 20rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 2rem 1.5rem;
+  }
+  #team_member img {
+    width: 9rem;
+    height: 9rem;
+  }
+  #team_member .description h2 {
+    font-size: 1rem;
+  }
+  #team_member .description h1 {
+    font-size: 1.5rem;
+  }
+
+  #team_member .social-media {
+    padding: 7px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  #team_member .member {
+    max-width: 12rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  .member img {
+    width: 7rem;
+    height: 7rem;
+  }
+  #team_member .description h2 {
+    font-size: 1rem;
+  }
+  #team_member .description h1 {
+    font-size: 1.2rem;
+  }
+  #team_member .member {
+    padding: 1.5rem 1.5rem;
+  }
+  .lead-title {
+    margin-bottom: 0.8rem;
+  }
+  #team_member .social-media {
+    padding: 2px 0;
+  }
+  #team_member .member::after {
+    height: 8px;
+  }
+
+  #team_member .member::before {
+    height: 8px;
+  }
+  #team_member .description .social-media svg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  #team_member .member {
+    max-width: 12rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 2rem;
+  }
+  #team_member img {
+    width: 5rem;
+    height: 5rem;
+  }
+  #team_member .description h2 {
+    font-size: 1rem;
+  }
+  #team_member .description h1 {
+    font-size: 1.2rem;
+  }
+
+  #team_member .social-media {
+    padding: 2px 0;
+  }
+  #team_member .member::after {
+    height: 8px;
+  }
+
+  #team_member .member::before {
+    height: 8px;
+  }
+  #team_member .description .social-media svg {
+    font-size: 1rem;
+  }
 }

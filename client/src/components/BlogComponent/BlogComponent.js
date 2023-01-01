@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import "./blogComponent.css";
 function BasicExample(props) {
   return (
-    <Card style={{ width: "23rem" }} className="blog-card-component">
+    <Card className="blog-card-component">
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.topic}</Card.Title>

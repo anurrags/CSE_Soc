@@ -1,12 +1,11 @@
-import React from "react";
-import "./teamMembers.css";
+import "./alumniMembers.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Twitter from "@mui/icons-material/Twitter";
 
 const teamMembers = (props) => {
   return (
-    <div id="team_member">
+    <div id="alumni_member">
       <div className="divider"></div>
       <div className="member">
         <img src={props.image} />

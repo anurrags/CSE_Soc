@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import "./signup.css";
 import Navbar from "../Navbar/navbar";
 const Signup = () => {
   const [data, setData] = useState({
@@ -39,8 +38,8 @@ const Signup = () => {
     <div>
       <Navbar />
 
-      <div className="signup_container">
-        <div className="signup_form_container">
+      <div className="login_container">
+        <div className="login_form_container">
           <div className="left">
             <form className="form_container" onSubmit={handleSubmit}>
               <h1>Create Account</h1>
@@ -81,18 +80,18 @@ const Signup = () => {
                 className="input"
               />
               {error && <div className="error_msg">{error}</div>}
-              <button type="submit" className="signup_btn">
+              <button type="submit" className="signin">
                 Sign Up
               </button>
             </form>
-          </div>
-          <div className="right">
-            <h1>Welcome Back</h1>
-            <Link to="/login">
-              <button type="button" className="signin_btn">
-                Sign in
-              </button>
-            </Link>
+            <div className="signup-div">
+              <h1>Welcome Back</h1>
+              <Link to="/login">
+                <button type="button" className="signup">
+                  Sign in
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
